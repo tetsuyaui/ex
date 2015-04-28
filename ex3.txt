@@ -1,0 +1,55 @@
+—ûK3.1
+C:\Users\OWNER\Anaconda>python ex3.py
+Traceback (most recent call last):
+  File "ex3.py", line 1, in <module>
+    repeat_lyrics()
+NameError: name 'repeat_lyrics' is not defined
+3.2
+C:\Users\OWNER\Anaconda>python ex3.py
+I'm a lumberjack, and I'm okay.
+I sleep all night and I work all day.
+I'm a lumberjack, and I'm okay.
+I sleep all night and I work all day.
+
+3.3
+>>> def right_justify(allen):
+...     print "%70s" %allen
+...
+>>> right_justify('allen')
+                                                                 allen
+>>>
+
+3.4-1
+C:\Users\OWNER\Anaconda>python ex3.py
+spam
+spam
+
+3.4-2
+def do_twice(f, g):
+    f(g)
+    f(g)
+
+def print_spam(t):
+    print 'spam'
+    
+do_twice(print_spam,print_spam)   
+
+C:\Users\OWNER\Anaconda>python ex3.py
+spam
+spam
+
+3.4-3
+def do_twice(f, g):
+    f(g)
+    f(g)
+
+def print_twice(g):
+    print g
+    print g
+    
+do_twice(print_twice,'spam')    
+
+C:\Users\OWNER\Anaconda>python ex3.py
+spam
+spam
+3.4.5
