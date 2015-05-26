@@ -1,0 +1,42 @@
+def print_n(s,n):
+    if n <= 0:
+        return
+    while n != 0:
+        print s
+        n = n - 1
+
+print_n("test", 10)
+
+def square_root(a) :
+    x = a - 1.0
+    epsilon = 0.0000001
+    while True:
+        print x 
+        y = (x +  a/x) / 2
+        if abs(y-x) < epsilon :
+            break
+        x = y
+    print y
+    return y
+        
+square_root(9)
+
+
+In [3]: runfile('C:/Users/OWNER/Documents/Python Scripts/ex7.py', wdir='C:/Users/OWNER/Documents/Python Scripts')
+test
+test
+test
+test
+test
+test
+test
+test
+test
+test
+8.0
+4.5625
+3.26755136986
+3.01095372764
+3.00001992461
+3.00000000007
+3.0
